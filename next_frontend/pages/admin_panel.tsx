@@ -54,9 +54,9 @@ export default function AdminPanelPage() {
 
     function CountriesCards(): JSX.Element[]  {
         const returnCards: JSX.Element[] = [];
-        countries.forEach((country: CountryInterface) => {
+        countries.forEach((country: CountryInterface, index) => {
             returnCards.push(
-                <Grid item xs={12} bgcolor={"#f5f5f5"} padding={"1rem"} sx={{
+                <Grid item xs={12} key={"Grid_item_country_"+index} bgcolor={"#f5f5f5"} padding={"1rem"} sx={{
                     borderRadius: "1rem",
                     marginBottom: "1rem",
                 }}>
