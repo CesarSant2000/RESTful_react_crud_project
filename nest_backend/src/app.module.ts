@@ -1,17 +1,17 @@
-import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-import { TypeOrmModule } from '@nestjs/typeorm';
-import { Country } from './country/country.entity';
-import { City } from './city/city.entity';
-import { CityModule } from './city/city.module';
-import { CountryModule } from './country/country.module';
+import { Module } from '@nestjs/common'
+import { AppController } from './app.controller'
+import { AppService } from './app.service'
+import { TypeOrmModule } from '@nestjs/typeorm'
+import { Country } from './country/country.entity'
+import { City } from './city/city.entity'
+import { CityModule } from './city/city.module'
+import { CountryModule } from './country/country.module'
 
 @Module({
   imports: [
     TypeOrmModule.forRoot({
       type: 'sqlite',
-      database: './BD/anime_bd.sqlite',
+      database: './BD/country_db.sqlite',
       entities: [City, Country],
       synchronize: true,
       dropSchema: false,
