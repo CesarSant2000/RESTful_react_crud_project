@@ -25,8 +25,8 @@ export default function Layout({children}: { children: ReactNode }) {
                     <Grid
                         item
                         xs={false}
-                        sm={0.5}
-                        md={0.5}
+                        sm={1}
+                        md={2}
                         sx={{
                             backgroundColor: 'transparent',
                         }}
@@ -36,7 +36,7 @@ export default function Layout({children}: { children: ReactNode }) {
                         item
                         xs={12}
                         sm={10}
-                        md={11}
+                        md={8}
                         sx={{
                             backgroundColor: 'white',
                             padding: '1rem',
@@ -50,8 +50,8 @@ export default function Layout({children}: { children: ReactNode }) {
                     <Grid
                         item
                         xs={false}
-                        sm={0.5}
-                        md={0.5}
+                        sm={1}
+                        md={2}
                         sx={{
                             backgroundColor: 'transparent',
                         }}

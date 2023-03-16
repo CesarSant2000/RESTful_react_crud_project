@@ -18,7 +18,6 @@ export class CreateCityDto {
   @IsDate()
   lastVisitDate: Date;
   @IsNotEmpty()
-  @IsNumber()
   qtyVisits: number;
   @IsNotEmpty()
   @IsString()

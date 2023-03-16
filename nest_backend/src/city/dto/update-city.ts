@@ -17,7 +17,6 @@ export class UpdateCityDto {
   @IsDate()
   lastVisitDate: Date;
   @IsOptional()
-  @IsNumber()
   qtyVisits: number;
   @IsOptional()
   @IsString()

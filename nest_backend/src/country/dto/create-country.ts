@@ -4,6 +4,7 @@ import {
   IsNotEmpty,
   IsString,
 } from '@nestjs/class-validator';
+import { City } from '../../city/city.entity'
 
 export class CreateCountryDto {
   @IsNotEmpty()
@@ -19,6 +20,6 @@ export class CreateCountryDto {
   @IsNotEmpty()
   isCountryVisitedMultipleTimes: boolean;
   @IsNotEmpty()
-  @IsInt()
   qtyCitiesToVisit: number;
+  visitedCities: City[];
 }

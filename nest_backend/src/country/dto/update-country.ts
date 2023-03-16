@@ -19,6 +19,5 @@ export class UpdateCountryDto {
   @IsOptional()
   isCountryVisitedMultipleTimes: boolean;
   @IsOptional()
-  @IsInt()
   qtyCitiesToVisit: number;
 }
